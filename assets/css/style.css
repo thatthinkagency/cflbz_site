@@ -2,7 +2,7 @@
 :root {
   --bg-deep: #0a0a0c;
   --bg-card: rgba(18, 18, 24, 0.65);
-  --text-muted-custom: rgba(255, 255, 255, 0.65);
+  --text-muted-custom: rgba(255, 255, 255, 0.82);
   --accent-purple: #a855f7;
   --accent-blue: #6366f1;
   --accent-gold: #d4af37;
@@ -21,6 +21,16 @@ body {
   background: var(--bg-deep);
   color: #f4f4f5;
   overflow-x: hidden;
+}
+
+/* Bootstrap .text-muted is gray for light UIs — brighten for dark theme readability */
+.text-muted {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+/* Hero + gallery captions: default white-50 is too faint on photos */
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.78) !important;
 }
 
 .text-white-75 {

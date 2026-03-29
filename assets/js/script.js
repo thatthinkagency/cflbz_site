@@ -5,7 +5,6 @@
   var yearEl = document.getElementById("year");
   var form = document.getElementById("contactForm");
   var feedback = document.getElementById("formFeedback");
-  var playBtn = document.getElementById("playVideoBtn");
 
   /* Footer year */
   if (yearEl) {
@@ -54,7 +53,7 @@
     });
   }
 
-  /* Contact form — client-side success (no backend) */
+  /* Lead form — client-side success (no backend) */
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -64,33 +63,11 @@
       }
       form.classList.remove("was-validated");
       if (feedback) {
-        feedback.textContent = "Thanks — we’ll get back to you shortly.";
+        feedback.textContent = "Thanks — we’ll get back to you shortly with a quote.";
         feedback.classList.remove("d-none", "text-danger");
         feedback.classList.add("text-success");
       }
       form.reset();
-    });
-  }
-
-  /* Inline demo: replace with your YouTube/Vimeo embed URL */
-  var VIDEO_URL =
-    "https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&rel=0&modestbranding=1";
-
-  if (playBtn) {
-    playBtn.addEventListener("click", function () {
-      var wrap = playBtn.closest(".video-placeholder");
-      if (!wrap) return;
-      if (VIDEO_URL) {
-        wrap.innerHTML =
-          '<iframe class="w-100 h-100 border-0" src="' +
-          VIDEO_URL +
-          '" title="CFLBZ highlight reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-      } else {
-        playBtn.classList.add("play-pulse");
-        window.setTimeout(function () {
-          playBtn.classList.remove("play-pulse");
-        }, 600);
-      }
     });
   }
 
