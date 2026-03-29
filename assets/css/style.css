@@ -269,6 +269,11 @@ code.text-accent {
   font-weight: 700;
 }
 
+/* Clickable service cards (Bootstrap stretched-link stacking) */
+a.stretched-link.z-1 {
+  z-index: 2;
+}
+
 /* Glass cards */
 .glass-card {
   background: var(--bg-card);

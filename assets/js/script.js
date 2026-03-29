@@ -71,6 +71,35 @@
     });
   }
 
+  /* Contractor onboarding — opens email client with application body */
+  var onboardForm = document.getElementById("onboardingForm");
+  var onboardEmail = "hello@cflbz.com";
+  if (onboardForm) {
+    onboardForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!onboardForm.checkValidity()) {
+        onboardForm.classList.add("was-validated");
+        return;
+      }
+      onboardForm.classList.remove("was-validated");
+      var lines = [];
+      var els = onboardForm.elements;
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (!el.name || el.type === "submit" || el.type === "button") continue;
+        if (el.type === "checkbox") {
+          lines.push(el.name + ": " + (el.checked ? "yes" : "no"));
+        } else {
+          lines.push(el.name + ": " + el.value);
+        }
+      }
+      var body = encodeURIComponent(lines.join("\n"));
+      var subj = encodeURIComponent("Contractor onboarding application");
+      window.location.href =
+        "mailto:" + onboardEmail + "?subject=" + subj + "&body=" + body;
+    });
+  }
+
   /* Smooth offset for fixed navbar when using hash links */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (e) {

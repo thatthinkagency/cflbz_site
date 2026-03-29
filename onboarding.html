@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Contractor onboarding — CFLBZ Central Florida Biz Services">
+  <title>Onboarding | CFLBZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="section-dark">
+  <div class="container py-5 my-lg-4" style="max-width: 720px;">
+    <a href="index.html" class="btn btn-outline-light rounded-pill mb-4"><i class="bi bi-arrow-left me-2"></i>Back to website</a>
+
+    <div class="text-center mb-4">
+      <span class="section-label">Contractors</span>
+      <h1 class="section-title mt-2">Onboarding</h1>
+      <p class="text-muted mb-0">Complete the questionnaire below. Submitting opens your email app with your answers addressed to <a href="mailto:hello@cflbz.com" class="link-light">hello@cflbz.com</a>.</p>
+    </div>
+
+    <form id="onboardingForm" class="glass-card p-4 rounded-4 border border-light border-opacity-10" novalidate>
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="onName" class="form-label small text-muted">Name</label>
+          <input type="text" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onName" name="name" required placeholder="Full name" autocomplete="name">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="onAge" class="form-label small text-muted">Age</label>
+          <input type="number" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onAge" name="age" required min="18" max="99" placeholder="Age">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="onVehicle" class="form-label small text-muted">Vehicle type</label>
+          <input type="text" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onVehicle" name="vehicle_type" required placeholder="e.g. pickup, cargo van, SUV">
+        </div>
+        <div class="col-12">
+          <label class="form-label small text-muted d-block">Equipment</label>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" name="trailer" id="onTrailer" value="yes">
+            <label class="form-check-label text-muted" for="onTrailer">Trailer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="box_truck" id="onBoxTruck" value="yes">
+            <label class="form-check-label text-muted" for="onBoxTruck">Box truck</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="onTools" class="form-label small text-muted">Tools</label>
+          <textarea class="form-control bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onTools" name="tools" rows="3" required placeholder="List tools you own and bring to jobs"></textarea>
+        </div>
+        <div class="col-12">
+          <label for="onSkills" class="form-label small text-muted">Preferred skills</label>
+          <textarea class="form-control bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onSkills" name="preferred_skills" rows="3" required placeholder="e.g. carpentry, pressure washing, landscaping"></textarea>
+        </div>
+        <div class="col-12">
+          <label for="onPressure" class="form-label small text-muted">Owns pressure cleaner?</label>
+          <select class="form-select form-select-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onPressure" name="owns_pressure_cleaner" required>
+            <option value="" selected disabled>Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="access">Can access / rent when needed</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="onServices" class="form-label small text-muted">What services do you offer?</label>
+          <textarea class="form-control bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="onServices" name="services_offered" rows="4" required placeholder="Describe services you can perform for CFLBZ customers"></textarea>
+        </div>
+        <div class="col-12 pt-2">
+          <button type="submit" class="btn btn-primary rounded-pill px-4">Submit application via email</button>
+          <p class="small text-muted mt-3 mb-0">Your mail app will open with this form’s contents. Send the message to complete your application.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
