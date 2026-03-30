@@ -3,254 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CFLBZ — Central Florida Biz Services. Something extraordinary is on the way.">
-  <title>Coming Soon | CFLBZ</title>
+  <meta name="description" content="CFLBZ — Central Florida Biz Services. Our website is being updated. Contact us for service inquiries.">
+  <title>Website update in progress | CFLBZ</title>
+  <link rel="preload" as="image" href="assets/images/hero-1.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    .cs-page {
+    /* Coming soon: full hero + content (uses global .hero-* where applicable) */
+    .cs-hero-page {
       min-height: 100vh;
       min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem 1.25rem 4rem;
       position: relative;
-      overflow: hidden;
-      background: #050508;
     }
-    .cs-aurora {
-      position: absolute;
-      inset: -50%;
-      background:
-        radial-gradient(ellipse 80% 50% at 20% 40%, rgba(168, 85, 247, 0.35), transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(99, 102, 241, 0.3), transparent 45%),
-        radial-gradient(ellipse 50% 60% at 50% 90%, rgba(212, 175, 55, 0.12), transparent 50%);
-      animation: cs-aurora-shift 18s ease-in-out infinite alternate;
-      pointer-events: none;
+    .cs-hero-page .hero-carousel,
+    .cs-hero-page .hero-carousel .carousel-inner,
+    .cs-hero-page .hero-carousel .carousel-item {
+      min-height: 100vh;
+      min-height: 100dvh;
     }
-    @keyframes cs-aurora-shift {
-      0% { transform: translate(0, 0) rotate(0deg); opacity: 0.85; }
-      100% { transform: translate(5%, 8%) rotate(8deg); opacity: 1; }
+    .cs-hero-page .hero-img {
+      height: 100vh;
+      height: 100dvh;
     }
-    .cs-grid {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 20%, transparent 70%);
-      pointer-events: none;
+    .cs-hero-page .hero-content {
+      padding-top: 2rem;
+      padding-bottom: 7.5rem;
+      overflow-y: auto;
     }
-    .cs-orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(60px);
-      opacity: 0.45;
-      animation: cs-float 12s ease-in-out infinite;
-      pointer-events: none;
-    }
-    .cs-orb--1 { width: 280px; height: 280px; background: #a855f7; top: 10%; left: -5%; animation-delay: 0s; }
-    .cs-orb--2 { width: 220px; height: 220px; background: #6366f1; bottom: 15%; right: -3%; animation-delay: -4s; }
-    .cs-orb--3 { width: 160px; height: 160px; background: #d4af37; top: 55%; right: 25%; animation-delay: -7s; opacity: 0.25; }
-    @keyframes cs-float {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(30px, -25px) scale(1.05); }
-      66% { transform: translate(-20px, 15px) scale(0.95); }
-    }
-    .cs-wrap {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      max-width: 640px;
-      text-align: center;
-    }
-    .cs-badge {
-      display: inline-block;
-      font-size: 0.7rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--accent-gold);
-      margin-bottom: 1.25rem;
-      animation: cs-fade-up 1s ease 0.1s both;
-    }
-    .cs-title {
-      font-family: var(--font-display);
-      font-size: clamp(2.75rem, 9vw, 4.25rem);
-      font-weight: 700;
-      line-height: 1.08;
-      margin-bottom: 0.75rem;
-      background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.92) 35%, var(--accent-gold) 90%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: cs-fade-up 1s ease 0.25s both;
-    }
-    .cs-sub {
-      font-size: clamp(1.05rem, 3.5vw, 1.25rem);
-      color: rgba(255, 255, 255, 0.78);
-      font-weight: 400;
-      margin-bottom: 0.5rem;
-      animation: cs-fade-up 1s ease 0.4s both;
-    }
-    .cs-tag {
-      font-size: 0.95rem;
-      color: rgba(255, 255, 255, 0.55);
-      margin-bottom: 2rem;
-      animation: cs-fade-up 1s ease 0.52s both;
-    }
-    @keyframes cs-fade-up {
-      from { opacity: 0; transform: translateY(28px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .cs-card {
-      background: rgba(18, 18, 24, 0.55);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 1.5rem;
+    .cs-status {
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(10, 10, 12, 0.72);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 1.25rem;
       padding: 2rem 1.75rem;
-      box-shadow:
-        0 0 0 1px rgba(168, 85, 247, 0.12),
-        0 24px 80px rgba(0, 0, 0, 0.55);
-      animation: cs-fade-up 1s ease 0.65s both;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
     }
-    .cs-coming {
-      font-size: clamp(1.5rem, 5vw, 2rem);
-      font-weight: 600;
-      font-family: var(--font-sans);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-      background: linear-gradient(90deg, #c4b5fd, #fff, #fcd34d);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .cs-status h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.3;
     }
-    .cs-line {
-      width: 72px;
-      height: 3px;
-      margin: 0 auto 1.25rem;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--accent-purple), var(--accent-gold));
-    }
-    .cs-blurb {
-      color: rgba(255, 255, 255, 0.68);
+    .cs-status p {
+      color: rgba(255, 255, 255, 0.82);
       font-size: 0.98rem;
       line-height: 1.65;
-      margin-bottom: 1.75rem;
+      margin-bottom: 0.85rem;
     }
-    .cs-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
+    .cs-status p:last-of-type {
+      margin-bottom: 0;
     }
-    .cs-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.85rem 1.75rem;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    .cs-status .lead {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.05rem;
     }
-    .cs-btn--primary {
-      background: linear-gradient(135deg, var(--accent-purple) 0%, #7c3aed 50%, var(--accent-blue) 100%);
-      color: #fff;
-      border: none;
-      box-shadow: 0 0 32px rgba(168, 85, 247, 0.35);
-    }
-    .cs-btn--primary:hover {
-      color: #fff;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px rgba(168, 85, 247, 0.45);
-    }
-    .cs-btn--ghost {
-      background: rgba(255, 255, 255, 0.06);
-      color: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .cs-btn--ghost:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-    }
-    .cs-footer {
+    .cs-foot {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 1.25rem;
+      z-index: 3;
+      padding: 1rem 1.25rem 1.25rem;
       text-align: center;
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.4);
-      z-index: 2;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.45);
+      background: linear-gradient(0deg, rgba(10, 10, 12, 0.9) 0%, transparent 100%);
     }
-    .cs-footer a {
-      color: rgba(255, 255, 255, 0.55);
+    .cs-foot a {
+      color: rgba(255, 255, 255, 0.62);
       text-decoration: none;
     }
-    .cs-footer a:hover {
+    .cs-foot a:hover {
       color: var(--accent-gold);
-    }
-    .cs-shine {
-      position: absolute;
-      top: -100%;
-      left: -50%;
-      width: 40%;
-      height: 300%;
-      background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.06) 50%, transparent 60%);
-      animation: cs-shine 7s ease-in-out infinite;
-      pointer-events: none;
-    }
-    @keyframes cs-shine {
-      0% { transform: translateX(-20%) rotate(12deg); }
-      100% { transform: translateX(280%) rotate(12deg); }
     }
   </style>
 </head>
-<body class="cs-page">
-  <div class="cs-aurora" aria-hidden="true"></div>
-  <div class="cs-grid" aria-hidden="true"></div>
-  <div class="cs-orb cs-orb--1" aria-hidden="true"></div>
-  <div class="cs-orb cs-orb--2" aria-hidden="true"></div>
-  <div class="cs-orb cs-orb--3" aria-hidden="true"></div>
+<body>
+  <div class="cs-hero-page hero-wrap">
+    <div id="csHeroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="5500" data-bs-pause="false">
+      <div class="carousel-indicators hero-indicators">
+        <button type="button" data-bs-target="#csHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#csHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#csHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#csHeroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="assets/images/hero-1.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Professional pressure washing services" fetchpriority="high" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-2.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Lawn care and property services" loading="lazy" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-3.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Handyman and skilled trades" loading="lazy" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-4.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Patio and exterior services" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#csHeroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#csHeroCarousel" data-bs-slide="next" aria-label="Next slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
 
-  <div class="cs-wrap">
-    <p class="cs-badge">Central Florida</p>
-    <h1 class="cs-title">CFLBZ</h1>
-    <p class="cs-sub">Central Florida Biz Services</p>
-    <p class="cs-tag">Local trades · Digital growth · Real crews</p>
+    <div class="hero-overlay"></div>
 
-    <div class="cs-card position-relative overflow-hidden">
-      <div class="cs-shine" aria-hidden="true"></div>
-      <p class="cs-coming position-relative">Coming Soon</p>
-      <div class="cs-line position-relative"></div>
-      <p class="cs-blurb position-relative mb-0">
-        We’re putting the finishing touches on a new experience—property care, skilled partners, and services built for homeowners who expect more than a gig-app roulette. Check back shortly.
-      </p>
-      <div class="cs-actions position-relative mt-4">
-        <a href="mailto:hello@cflbz.com?subject=CFLBZ%20—%20Coming%20soon%20inquiry" class="cs-btn cs-btn--primary">Get in touch</a>
-        <a href="privacy.html" class="cs-btn cs-btn--ghost">Privacy Policy</a>
+    <div class="hero-content container text-center text-white">
+      <p class="hero-eyebrow text-uppercase mb-2 small">CFLBZ — Central Florida Biz Services</p>
+      <h1 class="display-5 display-md-4 fw-bold mb-3">Website update in progress</h1>
+      <p class="lead col-lg-8 mx-auto text-white-75 mb-4">We are currently upgrading our website to improve how you learn about our services and connect with our team.</p>
+
+      <div class="cs-status text-start">
+        <h2 class="text-center">Thank you for your patience</h2>
+        <p class="lead text-center mb-3">During this time, our business operations continue. If you need a quote, wish to schedule service, or have a time-sensitive request, please contact us directly.</p>
+        <p>We expect the refreshed site to be available soon. For privacy practices and disclosures, our <a href="privacy.html" class="link-light">Privacy Policy</a> remains available.</p>
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-4 pt-2">
+          <a href="mailto:hello@cflbz.com?subject=CFLBZ%20inquiry%20—%20website%20update%20period" class="btn btn-primary rounded-pill px-4 shadow-glow">Email us</a>
+          <a href="tel:+14075551234" class="btn btn-outline-light rounded-pill px-4">Call (407) 555-1234</a>
+        </div>
       </div>
     </div>
+
+    <footer class="cs-foot">
+      &copy; <span id="year"></span> CFLBZ · Made with passion by CFLBZ
+      <span class="d-block mt-1">
+        <a href="home.html">Full site preview</a>
+        <span aria-hidden="true"> · </span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span aria-hidden="true"> · </span>
+        <a href="mailto:hello@cflbz.com">hello@cflbz.com</a>
+      </span>
+    </footer>
   </div>
 
-  <footer class="cs-footer">
-    &copy; <span id="year"></span> CFLBZ · Made with passion by CFLBZ
-    <span class="d-block mt-1">
-      <a href="home.html">Full site preview</a>
-      <span aria-hidden="true"> · </span>
-      <a href="mailto:hello@cflbz.com">hello@cflbz.com</a>
-    </span>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    var el = document.getElementById("csHeroCarousel");
+    if (el && typeof bootstrap !== "undefined" && bootstrap.Carousel) {
+      bootstrap.Carousel.getOrCreateInstance(el, { interval: 5500, ride: "carousel", pause: false, wrap: true }).cycle();
+    }
+  </script>
 </body>
 </html>
