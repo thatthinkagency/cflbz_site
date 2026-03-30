@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CFLBZ — Central Florida Biz Services. Property services, website development, SEO, AI automations, and more. Fast quotes; same-day availability subject to staffing availability per booking.">
+  <title>CFLBZ | Central Florida Biz Services</title>
+  <link rel="preload" as="image" href="assets/images/hero-1.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" aria-label="Main">
+    <div class="container">
+      <a class="navbar-brand fw-bold brand-glow" href="#home">CFLBZ</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm px-4 rounded-pill nav-cta" href="#contact">Get a Quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <header id="home" class="hero-wrap">
+    <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="false">
+      <div class="carousel-indicators hero-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="assets/images/hero-1.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Pressure washer wand cleaning a residential driveway" fetchpriority="high" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-2.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Lawn care and mowing at a Central Florida home" loading="lazy" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-3.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Handyman tools and home repair services" loading="lazy" decoding="async">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-4.jpg" class="d-block w-100 hero-img" width="1920" height="1080" alt="Clean patio and pool deck after pressure washing" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container text-center text-white">
+        <p class="hero-eyebrow text-uppercase mb-2 animate-hero" data-animate>CFLBZ — Central Florida Biz Services</p>
+        <h1 class="display-3 display-md-2 fw-bold mb-3 animate-hero" data-animate style="--delay: 0.1s">Pressure Washing, Handyman, and Lawn Care Services</h1>
+        <p class="lead col-lg-8 mx-auto mb-2 text-white-75 animate-hero" data-animate style="--delay: 0.2s">Fast, affordable, and available today.</p>
+        <p class="small text-white-50 col-lg-8 mx-auto mb-4 animate-hero" data-animate style="--delay: 0.28s">Local Services. Fast Quotes. Same‑Day Availability — staffing availability per booking.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center animate-hero" data-animate style="--delay: 0.35s">
+          <a href="#contact" class="btn btn-primary btn-lg px-5 rounded-pill shadow-glow">Get a Quote</a>
+          <a href="#contact" class="btn btn-outline-light btn-lg px-5 rounded-pill glass-btn">Request Service</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-padding section-dark">
+    <div class="container">
+      <div class="text-center mb-5 pb-2 reveal">
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title mt-2">Home, Property &amp; Digital Services You Can Book Today</h2>
+        <p class="text-muted col-lg-7 mx-auto mb-2">One call for pressure washing, painting, lawn care, handyman work, haul-away, concrete pavers, garage epoxy, vinyl flooring, websites, SEO, AI automations, and more—serving homeowners and businesses across Central Florida.</p>
+        <p class="small fst-italic text-center col-lg-10 mx-auto mb-0 text-accent">“From spotless job sites to sites that rank and systems that run themselves—we’re the partner who shows up in work boots and in your workflow.”</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-droplet"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Pressure Washing</h3>
+            <p class="text-muted small mb-0">Driveways, sidewalks, siding, and hardscapes—professional equipment and streak-free results.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Pressure Washing — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-flower2"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Lawn Care</h3>
+            <p class="text-muted small mb-0">Mowing, edging, and seasonal upkeep to keep your curb appeal sharp year-round.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Lawn Care — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-tools"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Handyman Services</h3>
+            <p class="text-muted small mb-0">Repairs, installs, and odd jobs—skilled help for the tasks on your to-do list.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Handyman Services — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-truck"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Junk Removal</h3>
+            <p class="text-muted small mb-0">Garage cleanouts, appliance haul-away, and debris removal—loaded and disposed for you.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Junk Removal — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-box-seam"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Small Hauls</h3>
+            <p class="text-muted small mb-0">Furniture, donation runs, and light moving—perfect when you need a truck and an extra set of hands.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Small Hauls — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-grid-3x3-gap"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Fence Cleaning</h3>
+            <p class="text-muted small mb-0">Wood, vinyl, and aluminum—safe washing that restores color without damage.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Fence Cleaning — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-trash2"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Trash Can Cleaning</h3>
+            <p class="text-muted small mb-0">Deodorize and sanitize bins so your driveway stays fresh—especially in Florida heat.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Trash Can Cleaning — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-water"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Patio &amp; Pool Deck Cleaning</h3>
+            <p class="text-muted small mb-0">Slip-safe treatment for pavers, concrete, and cool deck around the pool.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Patio and Pool Deck Cleaning — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-palette2"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Painting</h3>
+            <p class="text-muted small mb-0">Interior and exterior paint, trim, and touch-ups—clean lines and lasting finishes.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Painting — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-grid-3x3"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Concrete Pavers</h3>
+            <p class="text-muted small mb-0">Install, reset, and seal paver driveways, walkways, and patios for level, durable surfaces.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Concrete Pavers — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-layers"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Garage Epoxy</h3>
+            <p class="text-muted small mb-0">Durable epoxy and flake coatings that resist stains, tires, and Florida humidity.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Garage Epoxy — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-border-inner"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Vinyl Flooring</h3>
+            <p class="text-muted small mb-0">Luxury vinyl plank and tile installs—water-friendly options for kitchens, baths, and living spaces.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Vinyl Flooring — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-code-slash"></i></div>
+            <h3 class="h5 fw-semibold mb-2">Website Development</h3>
+            <p class="text-muted small mb-0">Fast, modern sites and landing pages—mobile-friendly, on-brand, and built to convert.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book Website Development — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3 class="h5 fw-semibold mb-2">SEO Services</h3>
+            <p class="text-muted small mb-0">Local and on-page SEO so customers find you when it matters—not buried on page five.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book SEO Services — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 position-relative">
+            <div class="icon-wrap mb-3"><i class="bi bi-cpu"></i></div>
+            <h3 class="h5 fw-semibold mb-2">A.I. Automations</h3>
+            <p class="text-muted small mb-0">Smart workflows, integrations, and AI-assisted processes that cut busywork and speed up follow-up.</p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Book A.I. Automations — go to contact form"></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal d-flex align-items-stretch">
+          <div class="glass-card h-100 p-4 rounded-4 border border-light border-opacity-10 w-100 d-flex flex-column justify-content-center text-center cta-mini position-relative">
+            <p class="mb-3 fw-medium">Need a price today?</p>
+            <p class="mb-0"><span class="btn btn-primary rounded-pill">Request Service</span></p>
+            <a href="#contact" class="stretched-link z-1" aria-label="Need a price today — go to booking and contact form"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="section-padding section-gradient">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <span class="section-label">Why CFLBZ</span>
+          <h2 class="section-title mt-2 mb-4">Local Crews. Real Results.</h2>
+          <ul class="why-list list-unstyled mb-0">
+            <li class="d-flex gap-3 mb-3"><span class="why-check"><i class="bi bi-check-lg"></i></span><span><strong>Professional experience</strong> — Residential and commercial jobs across Central Florida.</span></li>
+            <li class="d-flex gap-3 mb-3"><span class="why-check"><i class="bi bi-check-lg"></i></span><span><strong>Reliable &amp; fast setup</strong> — We show up on time with the right tools for the job.</span></li>
+            <li class="d-flex gap-3 mb-3"><span class="why-check"><i class="bi bi-check-lg"></i></span><span><strong>Quality you can see</strong> — Straightforward pricing and work that speaks for itself.</span></li>
+            <li class="d-flex gap-3"><span class="why-check"><i class="bi bi-check-lg"></i></span><span><strong>Customer-first energy</strong> — Clear communication from quote to completion.</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-primary rounded-pill mt-4 px-4">Get a Quote</a>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="glass-card p-4 p-md-5 rounded-4 border border-light border-opacity-10 why-card">
+            <div class="row g-3 text-center">
+              <div class="col-6">
+                <div class="stat-box rounded-3 p-3"><span class="stat-num">Same‑Day</span><span class="stat-label d-block small text-muted">Staffing availability per booking</span></div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box rounded-3 p-3"><span class="stat-num">Local</span><span class="stat-label d-block small text-muted">CF Pros</span></div>
+              </div>
+              <div class="col-12 mt-2">
+                <p class="small text-muted mb-0 fst-italic">“Our driveway and patio look brand new—fast quote and done right.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE / AFTER GALLERY (same section shell as former experience strip) -->
+  <section id="experience" class="experience-section position-relative overflow-hidden">
+    <div class="experience-bg" role="img" aria-label="Clean residential property after professional services"></div>
+    <div class="experience-overlay"></div>
+    <div class="container position-relative z-1 py-5 my-lg-5 text-center">
+      <h2 class="display-5 fw-bold text-white mb-3 text-shadow reveal">Before &amp; After</h2>
+      <p class="col-lg-8 mx-auto text-white-75 mb-4 reveal">Real results from pressure washing on concrete, patios, and exteriors—see the difference in every project.</p>
+      <div class="row g-3 g-md-4 justify-content-center reveal mx-auto" style="max-width: 960px;">
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-1.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Driveway pressure washing before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Driveway</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-2.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Sidewalk cleaning before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Sidewalk</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-3.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Patio surface restoration before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Patio</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-4.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Fence washing before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Fence</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-5.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Pool deck cleaning before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Pool deck</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="ratio ratio-1x1 rounded-4 overflow-hidden border border-light border-opacity-25 shadow-lg">
+            <img src="assets/images/gallery-6.jpg" class="object-fit-cover w-100 h-100" width="400" height="400" alt="Concrete walkway brightening before and after" loading="lazy" decoding="async">
+          </div>
+          <p class="small text-white-50 mt-2 mb-0">Walkway</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING & SERVICE AREAS (booking section id preserved for nav) -->
+  <section id="booking" class="section-padding section-dark">
+    <div class="container">
+      <div class="glass-card rounded-4 border border-light border-opacity-10 p-4 p-md-5 reveal">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5 text-center text-lg-start">
+            <span class="section-label">Transparent Pricing</span>
+            <h2 class="section-title mt-2 mb-3">Pricing &amp; Estimates</h2>
+            <p class="text-muted mb-4">Starting points—final price depends on size and condition. Request a fast quote for your property.</p>
+            <ul class="list-unstyled text-start mb-0">
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Driveways from <strong>$40</strong></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Sidewalks <strong>$25</strong></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Patios <strong>$30–$60</strong></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Lawn mowing from <strong>$35</strong></li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Handyman <strong>$40/hr</strong></li>
+              <li class="mb-4"><i class="bi bi-check2-circle text-accent me-2"></i>Junk removal starting at <strong>$60</strong></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 shadow-glow">Get a Quote</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 rounded-3 border border-light border-opacity-10 bg-black bg-opacity-40 h-100">
+              <h3 class="h5 mb-3 text-center text-md-start">Service Areas</h3>
+              <p class="text-muted small mb-3">We serve homeowners and businesses across Central Florida, including:</p>
+              <div class="row row-cols-2 g-2 text-start small">
+                <div class="col">Casselberry</div>
+                <div class="col">Winter Springs</div>
+                <div class="col">Oviedo</div>
+                <div class="col">Altamonte</div>
+                <div class="col">Longwood</div>
+                <div class="col">Orlando</div>
+              </div>
+              <hr class="border-light border-opacity-10 my-4">
+              <p class="small text-muted mb-3 text-center text-md-start">Prefer to book a time? Use our calendar—then tell us your service in the form below.</p>
+              <div class="ratio ratio-4x3 rounded-3 overflow-hidden border border-light border-opacity-10">
+                <iframe
+                  title="Schedule availability"
+                  src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%230a0a0a&ctz=America%2FNew_York&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK"
+                  width="100%"
+                  height="400"
+                  loading="lazy"
+                  class="w-100 border-0"
+                ></iframe>
+              </div>
+              <p class="small text-center text-muted py-2 mb-0 px-2">Connect your Google Calendar appointment link when ready.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-padding section-gradient border-top border-light border-opacity-10">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title mt-2">Request Service</h2>
+        <p class="text-muted col-lg-8 mx-auto mb-0">Tell us what you need—we’ll follow up with a quote, often the same day when staffing availability per booking allows.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card p-4 rounded-4 border border-light border-opacity-10 mb-4">
+            <h3 class="h5 mb-3">Direct Contact</h3>
+            <p class="mb-2"><i class="bi bi-envelope text-accent me-2"></i><a href="mailto:hello@cflbz.com" class="link-light text-decoration-none">hello@cflbz.com</a></p>
+            <p class="mb-4"><i class="bi bi-telephone text-accent me-2"></i><a href="tel:+14075551234" class="link-light text-decoration-none">(407) 555-1234</a></p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="tel:+14075551234" class="btn btn-outline-light btn-sm rounded-pill"><i class="bi bi-telephone-fill me-1"></i> Call</a>
+              <a href="sms:+14075551234" class="btn btn-outline-light btn-sm rounded-pill"><i class="bi bi-chat-dots me-1"></i> Message</a>
+              <a href="mailto:hello@cflbz.com" class="btn btn-outline-light btn-sm rounded-pill"><i class="bi bi-envelope me-1"></i> Email</a>
+            </div>
+          </div>
+          <div class="glass-card p-4 rounded-4 border border-light border-opacity-10">
+            <h3 class="h6 mb-3"><i class="bi bi-clock text-accent me-2"></i>Hours of operation</h3>
+            <p class="small text-muted mb-2"><strong class="text-white">Service:</strong> 10:00 AM – 6:00 PM</p>
+            <p class="small text-muted mb-0"><strong class="text-white">Administration:</strong> 7:00 AM – 12:00 PM &amp; 2:00 PM – 6:00 PM</p>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <form id="contactForm" class="glass-card p-4 rounded-4 border border-light border-opacity-10" novalidate>
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="contactName" class="form-label small text-muted">Name</label>
+                <input type="text" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="contactName" name="name" required placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="col-12">
+                <label for="contactAddress" class="form-label small text-muted">Address</label>
+                <input type="text" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="contactAddress" name="address" required placeholder="Street, city, ZIP" autocomplete="street-address">
+              </div>
+              <div class="col-12">
+                <label for="contactService" class="form-label small text-muted">Service Needed</label>
+                <input type="text" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="contactService" name="service" required placeholder="e.g. new website, SEO, AI automations, painting, epoxy, pressure washing">
+              </div>
+              <div class="col-12">
+                <label for="contactPhone" class="form-label small text-muted">Phone</label>
+                <input type="tel" class="form-control form-control-lg bg-dark bg-opacity-50 border-light border-opacity-25 text-white" id="contactPhone" name="phone" required placeholder="(407) 555-1234" autocomplete="tel">
+              </div>
+              <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                <button type="submit" class="btn btn-primary rounded-pill px-4">Request Service</button>
+                <span id="formFeedback" class="small text-success d-none" role="status"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER SERVICES -->
+  <section id="partners" class="section-padding section-dark border-top border-light border-opacity-10">
+    <div class="container text-center reveal">
+      <span class="section-label">Local Network</span>
+      <h2 class="section-title mt-2">Partner Services</h2>
+      <p class="text-muted col-lg-8 mx-auto mb-4">We work with trusted local pros. Want to be listed? Contact us.</p>
+      <a href="#contact" class="btn btn-outline-light rounded-pill px-5">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- HIRING / CONTRACTORS -->
+  <section id="hiring" class="section-padding section-gradient border-top border-light border-opacity-10">
+    <div class="container">
+      <div class="glass-card rounded-4 border border-light border-opacity-10 p-4 p-md-5 text-center reveal">
+        <span class="section-label">Join the crew</span>
+        <h2 class="section-title mt-2">We’re hiring contractors</h2>
+        <p class="text-muted col-lg-8 mx-auto mb-4">Apply now to work with CFLBZ as a trusted local pro. Tell us your skills, equipment, and availability.</p>
+        <a href="onboarding.html" class="btn btn-primary rounded-pill px-5 shadow-glow">Apply now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-5 border-top border-light border-opacity-10">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4 text-center text-md-start">
+          <span class="fw-bold brand-glow fs-5">CFLBZ</span>
+          <p class="small text-muted mb-0 mt-2">Central Florida Biz Services — local services, fast quotes, same-day availability (staffing availability per booking).</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <div class="col-md-4 text-center text-md-end small text-muted">
+          &copy; <span id="year"></span> CFLBZ — Central Florida Biz Services. All rights reserved.<br>
+          <a href="privacy.html" class="link-light text-decoration-none mt-2 d-inline-block">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="row pt-4 mt-3 border-top border-light border-opacity-10">
+        <div class="col-12 text-center small text-muted">Made with passion by CFLBZ</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
