@@ -85,6 +85,40 @@
     .cs-foot a:hover {
       color: var(--accent-gold);
     }
+
+    @media (max-width: 767.98px) {
+      .cs-hero-page .hero-content {
+        justify-content: flex-start;
+        padding-top: 5.1rem;
+        padding-bottom: 7.6rem;
+      }
+
+      .cs-status {
+        max-width: 100%;
+        padding: 1.35rem 1.1rem;
+        border-radius: 1rem;
+      }
+
+      .cs-status p {
+        font-size: 0.94rem;
+      }
+
+      .cs-foot {
+        font-size: 0.72rem;
+        padding-bottom: 0.95rem;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .cs-status .btn {
+        width: min(100%, 320px);
+      }
+
+      .cs-hero-page .carousel-control-prev,
+      .cs-hero-page .carousel-control-next {
+        width: 14%;
+      }
+    }
   </style>
 </head>
 <body>

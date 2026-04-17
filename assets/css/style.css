@@ -12,6 +12,12 @@
   --font-display: "Playfair Display", Georgia, serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +27,24 @@ body {
   background: var(--bg-deep);
   color: #f4f4f5;
   overflow-x: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+a {
+  overflow-wrap: anywhere;
 }
 
 /* Bootstrap .text-muted is gray for light UIs — brighten for dark theme readability */
@@ -146,6 +170,7 @@ code.text-accent {
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -454,4 +479,116 @@ a.stretched-link.z-1 {
 
 .link-light:hover {
   color: var(--accent-gold) !important;
+}
+
+@media (max-width: 991.98px) {
+  #mainNav .navbar-collapse {
+    background: rgba(10, 10, 12, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.9rem;
+    margin-top: 0.6rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-content {
+    justify-content: flex-start;
+    padding-top: 5.25rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .hero-carousel .carousel-control-prev,
+  .hero-carousel .carousel-control-next {
+    width: 12%;
+  }
+
+  .hero-indicators {
+    margin-bottom: 1.1rem;
+  }
+
+  .hero-eyebrow {
+    letter-spacing: 0.16em;
+    font-size: 0.66rem;
+  }
+
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .why-list li {
+    align-items: flex-start;
+  }
+
+  .stat-num {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .experience-section .container {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .experience-section .col-6 {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.2rem;
+  }
+
+  #booking .btn-lg {
+    width: min(100%, 320px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-content h1 {
+    font-size: clamp(1.85rem, 10.8vw, 2.25rem);
+    line-height: 1.16;
+  }
+
+  .hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .hero-content .btn-lg {
+    width: min(100%, 320px);
+    padding-left: 1.6rem !important;
+    padding-right: 1.6rem !important;
+  }
+
+  .glass-card {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .section-title {
+    font-size: clamp(1.45rem, 7vw, 1.8rem);
+    line-height: 1.25;
+  }
+
+  .section-label {
+    letter-spacing: 0.12em;
+  }
+
+  .icon-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    font-size: 1.15rem;
+  }
+
+  .calendar-embed iframe {
+    min-height: 320px;
+  }
+
+  .footer .small {
+    font-size: 0.78rem;
+  }
 }
